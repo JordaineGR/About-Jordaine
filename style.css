@@ -6,6 +6,7 @@
 
 body {
   margin: 60px auto;
+  padding: 20px;
 }
 
 .h1-font-size {
@@ -93,4 +94,59 @@ p {
 }
 .heading-font-size {
   font-size: 30px;
+}
+
+@media (max-width: 576px) {
+  .h2-font-size {
+    font-size: 32px;
+    text-align: center;
+  }
+  .h1-font-size {
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    padding: 20px 100px;
+    margin-bottom: 30px;
+  }
+  .navigation-links a {
+    display: block;
+    margin: 0 auto;
+  }
+  body {
+    padding: 0;
+  }
+  .homepage-image {
+    display: none;
+  }
+  p {
+    text-align: center;
+  }
+  .heading-font-size {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .about-image {
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    padding: 0.5px;
+    margin: 10px;
+    margin-right: 20px;
+    border-radius: 4px;
+    width: 95%;
+  }
+  .contact {
+    font-size: 32px;
+  }
+  .email-link {
+    font-size: 28px;
+    margin-bottom: -50px;
+  }
 }
